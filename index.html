@@ -32,7 +32,7 @@
                     </ul>
                 </div>
 
-                <button onclick="toggleMode()">Toggle Mode</button>
+                <button id="toggle-mode" onclick="toggleMode()">Dark Mode</button>
             </nav>
         </header>
 
@@ -123,9 +123,24 @@
                             <button onclick="removeSpinach()" class="button remove">Remove Item</button>
                         </div>
                     </div>
+                    <button id="toggle-cart" onclick="showCart()"><img src="assets/img/cart.png"/></button>
+                    <div id="cart" class="cart-popup hide-item">
+                        <div class="cart-top">
+                            <h3>Cart</h3>
+                            <img id='close' onclick="hideCart()" src="assets/img/close.svg">
+                        </div>
+                        <p id="menu-bbq" class="hide-item"></p>
+                        <p id="menu-salad" class="hide-item"></p>
+                        <p id="menu-spinach" class="hide-item"></p>
+                        <h4 id="cart-price">Your cart is empty</h4>
+                        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" id='checkout' class="button checkout">Checkout</a>
+                        <button onclick="clearCart()" class="button remove">Clear Cart</button>
+                    </div>
                 </div>
-                
 
+               
+                
+<!-- 
                 <div id="myModal" class="modal">
 
                 <div class="modal-content">
@@ -135,7 +150,7 @@
                     <input type = 'time'/>
                     
                 </div>
-            </section>
+            </section> -->
 
             <!--===== APP =======-->
             <section class="app section bd-container">

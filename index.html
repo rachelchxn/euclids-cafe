@@ -1,11 +1,11 @@
 
-< lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <lang="en"></lang>
 
         <!--========== CSS ==========-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Euclid's Fantastic Playhouse</title>
     </head>
@@ -19,7 +19,7 @@
         <!--========== HEADER ==========-->
         <header class="l-header" id="header">
             <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Tasty</a>
+                <a href="#" class="nav__logo">Euclid's Cafe</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
@@ -44,9 +44,10 @@
             <section class="home" id="home">
                 <div class="home__container bd-container bd-grid">
                     <div class="home__data">
-                        <h1 class="home__title">Tasty food</h1>
-                        <h2 class="home__subtitle">Try the best food of <br> the week.</h2>
-                        <a href="#" class="button">View Menu</a>
+                        <h2 class="home__title">Tasty food</h2>
+                        <h1 class="home__subtitle">Try the best food <br> of the week.</h1>
+                        <p class="home__p">Here at Euclid's, we only serve the best of the best. Experience flavour, quality, and convenience all at once.</p>
+                        <a href="#menu" class="button">View Menu</a>
                     </div>
     
                     <img src="assets/img/home.png" alt="" class="home__img">
@@ -57,9 +58,9 @@
             <section class="about section bd-container" id="about">
                 <div class="about__container  bd-grid">
                     <div class="about__data">
-                        <span class="section-subtitle about__initial">About us</span>
-                        <h2 class="section-title about__initial">We cook the best <br> tasty food</h2>
-                        <p class="about__description">We cook food</p>
+                        <h2 class="section-subtitle about__initial">About us</h2>
+                        <h1 class="section-title about__initial">We cook the best <br> tasty food</h1>
+                        <p class="about__description">We cook food all day everyday with love.</p>
                         <a href="#" class="button">Explore history</a>
                     </div>
 
@@ -69,22 +70,23 @@
 
             <!--========== SERVICES ==========-->
             <section class="services section bd-container" id="services">
-                <span class="section-subtitle">Offering</span>
-                <h2 class="section-title">Our amazing services</h2>
+                <!-- <span class="section-subtitle">Offering</span> -->
+                <h1 class="services section-title">Our amazing services</h1>
+
+                <img class="services__img" src='assets/img/services.jpg'/>
 
                 <div class="services__container  bd-grid">
                     <div class="services__content">
                         <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
-                            
                         </svg>
-                        <h3 class="services__title">Excellent food</h3>
+                        <h2 class="services__title">Excellent food</h2>
                         <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                     </div>
 
                     <div class="services__content">
                         <svg class="services__img" xmlns="http://www.w3.org/2000/svg">
                         </svg>
-                        <h3 class="services__title">Delivery</h3>
+                        <h2 class="services__title">Delivery</h2>
                         <p class="services__description">We offer our clients excellent quality services for many years, with the best and delicious food in the city.</p>
                     </div>
                 </div>
@@ -92,36 +94,34 @@
 
             <!--========== MENU ==========-->
             <section class="menu section bd-container" id="menu">
-                <span class="section-subtitle">Special</span>
-                <h2 class="section-title">Menu of the week</h2>
+                <h1 class="section-title">Menu of the week</h1>
 
                 <div class="menu__container bd-grid">
                     <div class="menu__content">
                         <img src="assets/img/plate1.png" alt="" class="menu__img">
                         <h3 class="menu__name">Barbecue salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$22.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <p class="menu__detail">Delicious dish</p>
+                        <a href="#" class="button menu__button">Add to Cart</a>
                     </div>
 
                     <div class="menu__content">
                         <img src="assets/img/plate2.png" alt="" class="menu__img">
                         <h3 class="menu__name">Salad with fish</h3>
-                        <span class="menu__detail">Delicious dish</span>
                         <span class="menu__preci">$12.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <p class="menu__detail">Delicious dish</p>
+                        <a href="#" class="button menu__button">Add to Cart</a>
                     </div>
                     
                     <div class="menu__content">
                         <img src="assets/img/plate3.png" alt="" class="menu__img">
-                        <h3 class="menu__name">Spinach salad</h3>
-                        <span class="menu__detail">Delicious dish</span>
-                        <span class="menu__preci">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
+                        <h3 class="menu__name">Spinach salad</h3><span class="menu__preci">$9.50</span>
+                        <p class="menu__detail">Delicious dish</p>
+                        <a href="#" class="button menu__button">Add to Cart</a>
                     </div>
                 </div>
                 
-                <button id="myBtn">modal</button>
+                <button class="myBtn">modal</button>
 
                 <div id="myModal" class="modal">
 
@@ -171,7 +171,7 @@
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
                 <div class="footer__content">
-                    <a href="#" class="footer__logo">Tasty Food</a>
+                    <a href="#" class="footer__logo">Euclid's Cafe</a>
                     <span class="footer__description">Restaurant</span>
                     <div>
                         <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>

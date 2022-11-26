@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Euclid's Fantastic Playhouse</title>
+        <script src="assets/js/main.js"></script>
     </head>
     <body>
 
@@ -28,14 +29,10 @@
                         <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-
-                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+                <button onclick="toggleMode()">Toggle Mode</button>
             </nav>
         </header>
 
@@ -100,7 +97,10 @@
                         <h3 class="menu__name">Barbecue salad</h3>
                         <span class="menu__preci">$22.00</span>
                         <p class="menu__detail">Delicious dish</p>
-                        <a href="#" class="button menu__button">Add to Cart</a>
+                        <div>
+                            <button onclick="addBbq()" class="button add-bbq">Add to Cart</button>
+                            <button onclick="removeBbq()" class="button remove">Remove Item</button>
+                        </div>
                     </div>
 
                     <div class="menu__content">
@@ -108,14 +108,20 @@
                         <h3 class="menu__name">Salad with fish</h3>
                         <span class="menu__preci">$12.00</span>
                         <p class="menu__detail">Delicious dish</p>
-                        <a href="#" class="button menu__button">Add to Cart</a>
+                        <div>
+                            <button onclick="addSalad()" class="button add-salad">Add to Cart</button>
+                            <button onclick="removeSalad()" class="button remove">Remove Item</button>
+                        </div>
                     </div>
                     
                     <div class="menu__content">
                         <img src="assets/img/plate3.png" alt="" class="menu__img">
                         <h3 class="menu__name">Spinach salad</h3><span class="menu__preci">$9.50</span>
                         <p class="menu__detail">Delicious dish</p>
-                        <a href="#" class="button menu__button">Add to Cart</a>
+                        <div>
+                            <button onclick="addSpinach()" class="button add-spinach">Add to Cart</button>
+                            <button onclick="removeSpinach()" class="button remove">Remove Item</button>
+                        </div>
                     </div>
                 </div>
                 
@@ -144,7 +150,7 @@
                         </div>
                     </div>
 
-                    <img src="assets/img/movil-app.png" alt="" class="app__img">
+                    <img src="assets/img/app.png" alt="" class="app__img">
                 </div>
             </section>
 
@@ -188,6 +194,11 @@
                         <a href="#" class="footer__social"><img class="social-icon" src="assets/img/facebook.svg"/></a>
                         <a href="#" class="footer__social"><img class="social-icon" src="assets/img/instagram.svg"/></a>
                         <a href="#" class="footer__social"><img class="social-icon" src="assets/img/twitter.svg"/></i></a>
+                    </div>
+                    <div class="socials-dark">
+                        <a href="#" class="footer__social"><img class="social-icon" src="assets/img/facebook-dark.svg"/></a>
+                        <a href="#" class="footer__social"><img class="social-icon" src="assets/img/instagram-dark.svg"/></a>
+                        <a href="#" class="footer__social"><img class="social-icon" src="assets/img/twitter-dark.svg"/></i></a>
                     </div>
                     <p class="footer__copy">&#169; 2022 Euclid's Cafe. All right reserved</p>
                 </div>

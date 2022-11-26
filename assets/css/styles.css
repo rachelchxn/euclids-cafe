@@ -70,14 +70,19 @@
 }
 
 * {
-  color: #FFFFFF;
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   width: 1200px;
-  background: #1E1E1E;
+  color: #1E1E1E;
+  background-color: #FFFFFF;
+}
+
+body.dark-theme {
+  background-color: #1E1E1E;
+  color: #FFFFFF;
 }
 
 .home {
@@ -120,15 +125,38 @@ h3 {
   border-width: 0;
 }
 
+button {
+  border: #FFFFFF;
+  background-color: #FF9F0D;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.remove {
+  background: none;
+}
+
 .button:hover {
   cursor: pointer;
-  background-color: var(--first-color-alt);
+  opacity: 0.6;
 }
 
 p {
   font-family: 'Inter';
   font-size: 16px;
   line-height: 24px;
+  color: #393939;
+}
+
+.dark-theme p {
+  color: #cecece;
+
 }
 
 .nav__list {
@@ -138,12 +166,22 @@ p {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
-  margin: 24px 0 ;
+  margin: 0;
   padding: 0;
+}
+
+.nav__menu {
+  float: right;
 }
 
 a {
   text-decoration: none;
+  color: #1E1E1E;
+}
+
+.dark-theme a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 li {
@@ -163,7 +201,8 @@ ul {
 }
 
 .nav.bd-container {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
   margin-top: 24px;
 }
 
@@ -201,13 +240,13 @@ p.about__description {
 }
 
 .services__img {
-  width: 94vw;
-  margin-left: -8vw;
+  width: 100%;
   z-index: -10;
   position: absolute;
   opacity: 0.15;
   height: 420px;
   object-fit: cover;
+  border-radius: 16px;
 }
 
 .services.bd-container {
@@ -244,13 +283,10 @@ p.about__description {
 }
 
 .menu__content p {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
   margin-top: 8px;
 }
 
-.menu__button {
-  margin-top: 16px;
-}
 
 .app__description {
   max-width: 400px;
@@ -290,7 +326,7 @@ form {
   flex-direction: column;
   width: 500px;
   padding: 16px 48px 48px;
-  background-color: var(--title-color);
+  background-color: #cfcfcf;
   border-radius: 16px;
 }
 
@@ -322,6 +358,7 @@ input::placeholder, textarea:-moz-placeholder {
 
 .socials {
   margin-top: 44px;
+  display: none;
 }
 
 .footer__title {
@@ -329,4 +366,21 @@ input::placeholder, textarea:-moz-placeholder {
 }
 footer {
   padding: 48px 0;
+}
+
+.app__img {
+  width: 600px;
+  margin-top: -50px;
+}
+
+.dark-theme form {
+  background-color: var(--title-color);
+}
+
+.socials-dark {
+  display: block;
+}
+
+.dark-theme .socials-dark {
+  display: none;
 }
